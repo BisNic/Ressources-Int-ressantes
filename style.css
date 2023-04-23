@@ -1,0 +1,524 @@
+
+body {
+    margin: auto;
+    background: #d3c3b7 ;
+    overflow-x: hidden;
+}
+/* STYLE DU MENU EN HAUT */
+header{
+    background: #132226;
+    position: sticky;
+    top :0;
+    z-index: 2;
+}
+h1 {
+    background: #040C0E;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+/* STYLE DES BOUTONS EN HAUT */
+.btn{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    background: #132226;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 15px auto 15px auto;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+header div{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+header div a {
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+header div a:hover {
+    background: #BE9063;
+    color: rgb(0, 0, 0);
+}
+.burger {
+    display: none;
+}
+
+
+/* STYLE DE LA PAGE CENTRALE*/
+/* MISE EN PAGE CENTRALE*/
+.column {
+    max-width: 100%;
+}
+.row {
+    max-width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+    "menu info";
+}
+
+/* STYLE DU MENU A GAUCHE */
+.menu {
+    grid-area: menu;
+    background: #132226;
+    color: white;
+}
+.menu h2{
+    z-index: 1;
+    background: #132226;
+    height: 30px;
+    margin: 0;
+    position: sticky;
+    top: 120px;
+    padding: 15px;
+}
+/* STYLE DES BOUTONS A GAUCHE */
+.menu button {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    background-color: #040C0E;
+    color: white;
+}
+.menu button:hover {
+    text-decoration: underline;
+    background: #BE9063;
+    color: rgb(0, 0, 0);
+}
+.menu .b1 {
+    position: sticky;
+    top : 180px;
+}
+.menu .b2 {
+    position: sticky;
+    top : 215px;
+}
+.menu .b3 {
+    position: sticky;
+    top : 250px;
+}
+.menu .b4 {
+    position: sticky;
+    top : 285px;
+}
+.menu .b5 {
+    position: sticky;
+    top : 320px;
+}
+.menu .b6 {
+    position: sticky;
+    top : 355px;
+}
+.menu .b7 {
+    position: sticky;
+    top : 390px;
+}
+.menu .b8 {
+    position: sticky;
+    top : 425px;
+}
+.menu .b9 {
+    position: sticky;
+    top : 460px;
+}
+.menu .b10 {
+    position: sticky;
+    top : 495px;
+}
+.menu .b11 {
+    position: sticky;
+    top : 530px;
+}
+.menu .b12 {
+    position: sticky;
+    top : 565px;
+}
+.menu .b13 {
+    position: sticky;
+    top : 600px;
+}
+.menu .b14 {
+    position: sticky;
+    top : 635px;
+}
+.menu .b15 {
+    position: sticky;
+    top : 670px;
+}
+.menu .b16 {
+    position: sticky;
+    top : 705px;
+}
+.menu .b17 {
+    position: sticky;
+    top : 740px;
+}
+.menu .b18 {
+    position: sticky;
+    top : 775px;
+}
+.menu .b19 {
+    position: sticky;
+    top : 810px;
+}
+.menu .b20 {
+    position: sticky;
+    top : 845px;
+}
+
+/* STYLE DE LA PARTIE CENTRALE */
+.information {
+    grid-area: info;
+}
+.information h2, .information h3 {
+    scroll-margin-top: 140px;
+}
+
+/* tnav pour titre de navigation */
+h2.tnav{
+    scroll-margin-top: 140px;
+    padding-bottom: 20px;    
+    margin-left: 20px ;
+    font-size: 4em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-decoration: underline;
+}
+/* Mise en page pour Présentation */
+p{
+    margin: 30px 20px 30px 20px;
+    font-size: 1.7em;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+/* Mise en page pour Ghibli, Film, Animé */
+.str1, .str2, .str3{
+    margin : 0 20px 50px 20px;
+    display: grid;
+    background: #7a8680;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "t t"
+    "a i";
+}
+/* ti pour TITRE */
+.ti{ 
+    margin-top: 0;
+    margin-left: 0;
+    background: #132226;
+    color: white;
+    width: 100%;
+    font-size: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    scroll-margin-top: 160px;
+    grid-area: t;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3em;
+}
+/* af pour AFFICHE */
+.af{
+    width: 400px;
+    grid-area: a;
+    margin-bottom: 40px;
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/* inf pour INFORMATIONS */
+.inf{
+    grid-area: i;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    font-size: 1.5em;
+    row-gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px 40px 0; 
+}
+.inf li,
+.infl li,
+.infv li,
+.infjv li{
+    margin: 5px;
+    background: #BE9063;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+/* Mise en page pour court métrage */
+.str4{
+    margin : 0 20px 50px 20px;
+    display: grid;
+    background: #7a8680;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "t"
+    "vid"
+    "iv";
+}
+video{
+    position: unset;
+    grid-area: vid;
+    width: 90%;
+    min-width: 300px;
+    height: 97%;
+    margin: 0 auto 40px auto; 
+}
+
+.infv{
+    grid-area: iv;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    font-size: 1.5em;
+    row-gap: 10px;
+    list-style-type: none;
+    margin: 0 20px 40px 20px;
+    padding: 0;
+}
+.infv li{
+    padding: 10px 0 10px 10px;
+    margin: auto 0 auto 0;
+}
+
+/* Mise en page pour musique */
+.str5{
+    margin : 0 20px 50px 20px;
+    display: grid;
+    background: #7a8680;
+    grid-template-rows: auto auto+40px;
+    grid-template-areas: 
+    "t"
+    "mus";
+}
+.mus{
+    margin : 0px 40px 60px 40px;
+    width: 90%;
+    height: 97%;
+    grid-area: mus;
+    align-items: center;
+    min-width: 300px;
+}
+
+/* Mise en page pour livre */
+.str6{
+    margin : 0 20px 50px 20px;
+    display: grid;
+    background: #7a8680;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "t t"
+    "a il";
+}
+.infl{
+    grid-area: il;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 0 20px 40px 0;
+    padding: 0;
+}
+
+/* Mise en page pour jru vidéo */
+.str7{
+    margin : 0 20px 50px 20px;
+    display: grid;
+    background: #7a8680;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "t t"
+    "a ijv"
+    "gp gp";
+}
+.infjv{
+    grid-area: ijv;
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 0 20px 40px 0;
+    padding-inline-start: 0;
+    padding: auto;
+}
+.gp{
+    grid-area: gp;
+    width: 90%;
+    min-width: 300px;
+    margin: 0 auto 40px auto; 
+}
+
+/* BAS DE PAGE */
+footer{
+    z-index: 2;
+    background-color: #040C0E;
+    width: 1fr;
+    bottom: 0px;
+    height: 180px;
+    text-align: center;
+    font-size: 2em;
+}
+footer p{
+    text-align: right;
+    color: white;
+    font-size: 0.7em;
+    text-decoration: underline;
+    margin: 20px 10px 10px 10px;
+}
+/* FLECHE DU BAS DE PAGE */
+.to-top{
+	margin-top: 20px;
+    text-align: center;
+    color:white;
+	padding-top:1.8em;
+	display:inline-block;
+	position:relative;
+	border-color:white;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+    content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color: #BE9063;
+	border-color: #BE9063;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1270px) {
+    .row {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "info";
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .str1, .str2, .str3{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "t"
+        "a"
+        "i";
+    }
+    .af{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inf, .infjv, .infl{
+        margin-left: 15px;
+    }
+    .ti{
+        margin-top: 0;
+        background: #132226;
+        color: white;
+        width: 100%;
+        font-size: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .str6{
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "t"
+        "a" 
+        "il";
+    }
+    .str7{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "t"
+        "a"
+        "ijv"
+        "gp";
+    }
+    .btn{
+        grid-template-columns: auto auto auto auto;
+    }
+    .btn a{
+        padding: 5px;
+    }
+
+    header nav{
+        background:#132226;
+        width: 100%;
+    }
+    .burger{
+        display: block;
+        position: relative;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: #132226;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 45px;
+        height: 4px;
+        background: white;
+    }
+    .bar::before, .bar::after {
+        content: "";
+        display: block;
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        background: white;
+    }
+    .bar::before {
+        transform: translateY(-12px);
+    }
+    .bar::after {
+        transform: translateY(12px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .af{
+        width: 400px;
+    }
+}
